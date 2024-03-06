@@ -503,17 +503,16 @@ a {
       .section-hero__btn {
         margin-bottom: 80px; } }
   .section-hero__img {
-    display: block; }
+    display: block;
+    max-width: 100%; }
     @media (min-width: 768px) {
       .section-hero__img {
         position: absolute;
         bottom: 0;
-        left: 0;
-        width: 108%; } }
+        left: 0; } }
     @media (min-width: 1024px) {
       .section-hero__img {
-        left: -16px;
-        width: 100%; } }
+        left: -16px; } }
     .section-hero__img--mobile {
       max-width: 170px;
       margin: -24px auto -38px; }
