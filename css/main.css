@@ -68,16 +68,16 @@ table {
 @font-face {
   font-family: 'ABC Gravity';
   font-display: swap;
-  src: url("../fonts/ABCGravity-Normal.eot");
-  src: local("PT Root UI Bold"), local("ABCGravity-Normal"), url("../fonts/ABCGravity-Normal.eot?#iefix") format("embedded-opentype"), url("../fonts/ABCGravity-Normal.woff2") format("woff2"), url("../fonts/ABCGravity-Normal.woff") format("woff");
+  src: url("../fonts/ABCGravityCyrillic-Normal.eot");
+  src: url("../fonts/ABCGravityCyrillic-Normal.eot?#iefix") format("embedded-opentype"), url("../fonts/ABCGravityCyrillic-Normal.woff2") format("woff2"), url("../fonts/ABCGravityCyrillic-Normal.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'ABC Gravity Condensed';
   font-display: swap;
-  src: url("../fonts/ABCGravity-SemiCondensed.eot");
-  src: url("../fonts/ABCGravity-SemiCondensed?#iefix") format("embedded-opentype"), url("../fonts/ABCGravity-SemiCondensed.woff2") format("woff2"), url("../fonts/ABCGravity-SemiCondensed.woff") format("woff");
+  src: url("../fonts/ABCGravityCyrillic-SemiCondensed.eot");
+  src: url("../fonts/ABCGravityCyrillic-SemiCondensed?#iefix") format("embedded-opentype"), url("../fonts/ABCGravityCyrillic-SemiCondensed.woff2") format("woff2"), url("../fonts/ABCGravityCyrillic-SemiCondensed.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 
@@ -105,7 +105,7 @@ input, button, textarea {
       line-height: 42px; } }
   @media (min-width: 768px) {
     .heading1 {
-      letter-spacing: -0.04em; } }
+      letter-spacing: -0.02em; } }
   @media (min-width: 1024px) {
     .heading1 {
       font-size: 50px;
