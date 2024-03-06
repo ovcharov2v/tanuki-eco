@@ -1,0 +1,100 @@
+.section-survey {
+	padding-top: 34px;
+	padding-bottom: 20px;
+	background-color: $color-gray-light;
+
+	@include tablet {
+		padding-bottom: 41px;
+	}
+
+	@include desktop {
+		padding-top: 80px;
+		padding-bottom: 95px;
+	}
+
+	&__grid {
+		@include tablet {
+			display: grid;
+			grid-template: auto / repeat(2, minmax(0, 1fr));
+			grid-gap: 36px;
+		}
+
+		@include desktop {
+			grid-gap: 60px;
+		}
+	}
+
+	&__title {
+		max-width: 390px;
+		margin-bottom: 16px;
+		text-align: center;
+
+		@include tablet {
+			margin-bottom: 32px;
+			text-align: unset;
+		}
+
+		@include desktop {
+			max-width: 760px;
+			margin-bottom: 50px;
+		}
+	}
+
+	&__text-box {
+		margin-bottom: 32px;
+		text-align: center;
+
+		@include tablet {
+			text-align: unset;
+		}
+
+		@include desktop {
+			margin-bottom: 64px;
+		}
+	}
+
+	&__text {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+
+		@include tablet {
+			width: unset;
+		}
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		max-width: 266px;
+		margin: 0 auto 30px;
+
+		@include tablet {
+			margin: 30px auto 0;
+		}
+
+		@include desktop {
+			width: unset;
+			max-width: 100%;
+			margin: -50px auto 0;
+		}
+
+		&--mobile {
+			@include tablet {
+				display: none;
+			}
+		}
+
+		&--tablet {
+			display: none;
+
+			@include tablet {
+				display: block;
+			}
+		}
+	}
+}

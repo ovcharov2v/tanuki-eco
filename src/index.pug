@@ -1,0 +1,62 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	- title = "Тануки Family экоупаковка"
+	- meta.description = "Тануки Family экоупаковка"
+block content
+	// Section Hero
+	section.section-hero.container
+		.section-hero__content
+			.section-hero__col
+				h1.heading1.section-hero__title Тестируем экоупаковку
+				p.section-hero__text Узнайте подробности и поделитесь мнением
+				a.button.button--red.button--big.section-hero__btn(href="#") Пройти опрос и получить 500 бонусов
+			.section-hero__col
+				+picture("section-hero/img")(class="section-hero__img section-hero__img--desktop")
+				+picture("section-hero/img-tablet")(class="section-hero__img section-hero__img--tablet")
+				+picture("section-hero/img-mobile")(class="section-hero__img section-hero__img--mobile")
+
+	// Section Why
+	section.section-why.container
+		.section-why__header
+			h2.section-why__title.heading2 Почему мы переходим на
+				|
+				|
+				span.underline экоупаковку
+				|?
+		.section-why__grid
+			// Card
+			article.section-why__card.section-why__card--n1
+				h3.section-why__card-title.heading3 Заботимся о здоровье
+				p.section-why__card-text Наша упаковка без микропластика и вредных веществ
+			// Card
+			article.section-why__card.section-why__card--n2
+				h3.section-why__card-title.heading3 Заботимся о природе
+				p.section-why__card-text Упаковка сделана из натуральной рисовой шелухи, полностью разлагается в природе и не вредит окружающей среде
+			// Card
+			article.section-why__card.section-why__card--n3
+				h3.section-why__card-title.heading3 Заботимся о гостях
+				p.section-why__card-text Такая упаковка не содержит микропластика, ГМО и вредных
+					br
+					|
+					|
+					|веществ, она не токсична и не вызывает аллергию.
+
+	// Section Survey
+	section.section-survey
+		.container
+			img.section-survey__img.section-survey__img--mobile(src="images/section-survey/img.svg", alt)
+			h2.section-survey__title.heading2 Помогите нам — заполните анкету и получите 500 бонусов
+			.section-survey__grid
+				.section-survey__col
+					.section-survey__text-box
+						p.section-survey__text Теперь из некоторых ресторанов «Тануки» вы можете получить заказ с доставкой в новой инновационной экоупаковке.
+						p.section-survey__text Она создана из рисовой шелухи, безопасна для природы, не загрязняет планету и никак не влияет на вкус и качество еды.
+						p.section-survey__text Если вы уже получили заказ в новой упаковке, пройдите опрос, рассказав нам о своих впечатлениях. Это поможет нам становиться еще лучше и удобнее для вас.
+					a.button.section-survey__btn(href="#") Пройти опрос и получить 500 бонусов
+				.section-survey__col
+					img.section-survey__img.section-survey__img--tablet(src="images/section-survey/img.svg", alt)
+

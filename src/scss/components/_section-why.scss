@@ -1,0 +1,104 @@
+.section-why {
+	padding-top: 32px;
+	padding-bottom: 36px;
+
+	@include desktop {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	&__title {
+		margin-bottom: 14px;
+		text-align: center;
+
+		@include tablet {
+			text-align: left;
+		}
+
+		@include desktop {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__grid {
+		display: grid;
+		grid-gap: 16px;
+
+		@include tablet {
+			grid-template: auto / repeat(3, minmax(0, 1fr));
+		}
+	}
+
+	&__card {
+		position: relative;
+		padding: 24px;
+		background-color: $color-gray-light;
+		border-radius: 12px;
+		background-size: 200px auto;
+		background-repeat: no-repeat;
+
+		@include tablet {
+			background-size: 180px auto;
+		}
+
+		&--n1 {
+			background-image: url('../images/section-why/icon1.svg');
+			background-position: 124% -32px;
+
+			@include tablet {
+				background-position: 137% 17px;
+			}
+
+			@include desktop {
+				background-position: 111% -17px;
+			}
+		}
+
+		&--n2 {
+			background-image: url('../images/section-why/icon2.svg');
+			background-position: 128% -48px;
+
+			@include tablet {
+				background-position: 137% 20px;
+			}
+
+			@include desktop {
+				background-position: 107% -34px;
+			}
+		}
+
+		&--n3 {
+			background-image: url('../images/section-why/icon3.svg');
+			background-position: 107% -15px;
+
+			@media (max-width: $breakpoint-tablet) {
+				background-size: 160px auto;
+			}
+
+			@include tablet {
+				background-position: 155% 27px;
+			}
+
+			@include desktop {
+				background-position: 98% -20px;
+			}
+		}
+	}
+
+	&__card-title {
+		margin-bottom: 8px;
+	}
+
+	&__card-text {
+		font-size: 18px;
+		line-height: 1.4;
+
+		br {
+			display: none;
+
+			@include desktop {
+				display: block;
+			}
+		}
+	}
+}
