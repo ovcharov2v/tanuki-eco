@@ -74,17 +74,16 @@
 
 	&__img {
 		display: block;
+		max-width: 100%;
 
 		@include tablet {
 			position: absolute;
 			bottom: 0;
 			left: 0;
-			width: 108%;
 		}
 
 		@include desktop {
 			left: -16px;
-			width: 100%;
 		}
 
 		&--mobile {
